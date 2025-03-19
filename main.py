@@ -35,7 +35,6 @@ class DiskState:
 
         alloc_start = block[1]
         alloc_end = alloc_start + size - 1
-
         if alloc_end < block[2]:
             heapq.heappush(self.free_blocks,
                            (block[2] - alloc_end, alloc_end + 1, block[2]))
