@@ -60,7 +60,6 @@ class Request:
 
 
 # endregion
-
 # region 存储控制器
 class StorageSystem:
     def __init__(self, N, V, G):
@@ -71,6 +70,7 @@ class StorageSystem:
         self.objects = {}
         self.requests = {}
         self.pending_requests = []
+
 
     # region 删除处理
     def process_deletes(self, delete_ids):
